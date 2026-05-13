@@ -15,7 +15,7 @@ builder.Services.AddCors(options =>
 });
 
 // Регистрируем HttpClient для вызовов API
-builder.Services.AddHttpClient();
+builder.Services.AddHttpClient<PlatformController>();
 
 var app = builder.Build();
 
